@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" href="/css/aboutCart.css">
+   <link rel="stylesheet" href="/css/baket.css">
+   <link rel="stylesheet" href="/css/index.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="boxTitle">
+         <p class="boxItem">Sign up and get 20% off to your first order.</p>
+         <a href="/page/signUp.html">Sign Up Now</a>
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="white" xmlns="http://www.w3.org/2000/svg">
+            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+         </svg>
+      </div>
+
+      <!-- header -->
+      <header class="main__header main__aboutCart">
+         <nav class="header__nav aboutCart__nav">
+            <div class="header__nav__logo__img">
+               <div class="overlay"></div>
+               <a class="burger burger--follow" href="#">
+                  <span></span>
+               </a>
+               <img src="/img/SHOP.CO.png" alt="">
+            </div>
+            <ul class="header__nav__menu__list header__nav__menu__list--open">
+               <li class="header__nav__menu__item">
+                  <select class="header__nav__menu__item__select" name="shop" id="shop">
+                     <option value="shop">Shop</option>
+                     <option value="noshop">No Shop</option>
+                  </select>
+               </li>
+               <li class="header__nav__menu__item"><a href="#onSale">On Sale</a></li>
+               <li class="header__nav__menu__item"><a href="#arrivals">New Arrivals</a></li>
+               <li class="header__nav__menu__item"><a href="#brands">Brands</a></li>
+            </ul>
+            <div class="header__nav__form">
+               <form class="header__nav__form__search aboutCart__search">
+                  <button type="submit" class="header__nav__search__button">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="7" stroke="#00000066" stroke-width="2"></circle>
+                        <line x1="16.24" y1="16.24" x2="22" y2="22" stroke="#00000066" stroke-width="2"></line>
+                     </svg>
+                  </button>
+                  <input type="text" placeholder="Search for product..."
+                     class="header__nav__search__input aboutCart__input">
+               </form>
+            </div>
+            <div class="header__nav__icons">
+               <div class="header__nav__icons__item">
+                  <a href="#openModal" id="openModal">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="black" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="header__nav__icons__item">
+                  <a href="/page/basket.html">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 24" fill="none"
+                        stroke="black" stroke-width="2">
+                        <circle cx="8" cy="20" r="1" />
+                        <circle cx="20" cy="20.4" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="header__nav__icons__item">
+                  <a href="/page/signIn.html">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="black" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="10" r="3" />
+                        <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- main -->
+      <main class="main__basket">
+         <section class="basket">
+            <div class="basket__inner">
+               <h1 class="basket__content__title">Your Cart</h1>
+               <div class="basket__contianer">
+                  <div class="basket__content">
+                     <div class="basket__left">
+                        <!-- cart list 1 -->
+                        <ul class="inside__content__body">
+                           <img class="list__img" src="/img/aboutCart/mb/1.png" alt="">
+                           <ul class="inside__content__list">
+                              <li class="fs__color">
+                                 <p>Skinny Fit Jeans</p>
+                                 <img src="/img/delete.svg" alt="">
+                              </li>
+                              <li class="inside__content__item">
+                                 Size: <span>Large</span>
+                              </li>
+                              <li class="inside__content__item">
+                                 Color: <span>white</span>
+                              </li>
+                              <li class="fs__color">
+                                 <p>$145</p>
+                                 <ul class="one__more__list">
+                                    <li id="one__more__minus__count" class="one__more__item one__minust">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                    <li id="one__more__count" class="one__more__item">1</li>
+                                    <li id="one__more__plus__count" class="one__more__item one__plus">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="12" y1="5" x2="12" y2="19" />
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </ul>
+                        <!-- cart 2 -->
+                        <ul class="inside__content__body">
+                           <img class="list__img" src="/img/aboutCart/mb/5.png" alt="">
+                           <ul class="inside__content__list">
+                              <li class="fs__color">
+                                 <p>Skinny Fit Jeans</p>
+                                 <img src="/img/delete.svg" alt="">
+                              </li>
+                              <li class="inside__content__item">
+                                 Size: <span>Large</span>
+                              </li>
+                              <li class="inside__content__item">
+                                 Color: <span>Red</span>
+                              </li>
+                              <li class="fs__color">
+                                 <p>$180</p>
+                                 <ul class="one__more__list">
+                                    <li id="one__more__minus__count" class="one__more__item one__minust">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                    <li id="one__more__count" class="one__more__item">1</li>
+                                    <li id="one__more__plus__count" class="one__more__item one__plus">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="12" y1="5" x2="12" y2="19" />
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </ul>
+                        <!-- cart 3 -->
+                        <ul class="inside__content__body">
+                           <img class="list__img" src="/img/aboutCart/mb/4.png" alt="">
+                           <ul class="inside__content__list">
+                              <li class="fs__color">
+                                 <p>Skinny Fit Jeans</p>
+                                 <img src="/img/delete.svg" alt="">
+                              </li>
+                              <li class="inside__content__item">
+                                 Size: <span>Large</span>
+                              </li>
+                              <li class="inside__content__item">
+                                 Color: <span>Blue</span>
+                              </li>
+                              <li class="fs__color">
+                                 <p>$240</p>
+                                 <ul class="one__more__list">
+                                    <li id="one__more__minus__count" class="one__more__item one__minust">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                    <li id="one__more__count" class="one__more__item">1</li>
+                                    <li id="one__more__plus__count" class="one__more__item one__plus">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <line x1="12" y1="5" x2="12" y2="19" />
+                                          <line x1="5" y1="12" x2="19" y2="12" />
+                                       </svg>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </ul>
+                     </div>
+                     <div class="basket__right">
+                        <h1 class="basket__right__title">Order Summary</h1>
+                        <ul class="basket__right__top__list">
+                           <li class="basket__right__top__item subtotal">
+                              <p class="right__top__item__title">Subtotal</p>
+                              <p class="right__top__item__price">$565</p>
+                           </li>
+                           <li class="basket__right__top__item discount">
+                              <p class="right__top__item__title">Discount (-20)</p>
+                              <p class="right__top__item__price price--empty">-$113</p>
+                           </li>
+                           <li class="basket__right__top__item deliveury">
+                              <p class="right__top__item__title">Delivery Fee</p>
+                              <p class="right__top__item__price">$15</p>
+                           </li>
+                        </ul>
+                        <ul class="basket__right__bottom__list">
+                           <li class="basket__right__top__item total price--list">
+                              <p class="right__top__item__text">Total</p>
+                              <p class="right__top__item__price">$467</p>
+                           </li>
+                        </ul>
+                        <div class="basket__right__use__promo">
+                           <form action="" class="use__promo__form">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                 <path
+                                    d="M23.0766 12.4857L13.7653 3.17444C13.5917 2.9997 13.3851 2.86115 13.1576 2.76685C12.93 2.67254 12.686 2.62435 12.4397 2.62507H3.75001C3.45164 2.62507 3.16549 2.7436 2.95451 2.95457C2.74353 3.16555 2.62501 3.4517 2.62501 3.75007V12.4398C2.62429 12.6861 2.67248 12.9301 2.76679 13.1576C2.86109 13.3852 2.99963 13.5918 3.17438 13.7654L12.4856 23.0766C12.8372 23.4281 13.3141 23.6256 13.8113 23.6256C14.3084 23.6256 14.7853 23.4281 15.1369 23.0766L23.0766 15.1369C23.4281 14.7853 23.6255 14.3085 23.6255 13.8113C23.6255 13.3141 23.4281 12.8373 23.0766 12.4857ZM13.8113 21.2204L4.87501 12.2813V4.87507H12.2813L21.2175 13.8113L13.8113 21.2204ZM9.37501 7.87507C9.37501 8.17174 9.28703 8.46175 9.12221 8.70842C8.95739 8.9551 8.72312 9.14736 8.44903 9.26089C8.17494 9.37442 7.87334 9.40412 7.58237 9.34625C7.2914 9.28837 7.02413 9.14551 6.81435 8.93573C6.60457 8.72595 6.46171 8.45868 6.40383 8.1677C6.34595 7.87673 6.37566 7.57513 6.48919 7.30104C6.60272 7.02695 6.79498 6.79269 7.04165 6.62786C7.28833 6.46304 7.57834 6.37507 7.87501 6.37507C8.27283 6.37507 8.65436 6.5331 8.93567 6.81441C9.21697 7.09571 9.37501 7.47724 9.37501 7.87507Z"
+                                    fill="black" fill-opacity="0.4" />
+                              </svg>
+                              <input class="use__promo__form__input" type="text" placeholder="Add promo code">
+                           </form>
+                           <button class="apply__pormo">Apply</button>
+                        </div>
+                        <button class="heanding__btn__black checkout__btn">
+                           Go to Checkout
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                              fill="white">
+                              <path d="M4.1665 10H15.8332M15.8332 10L10 4.16667M15.8332 10L10 15.8333" stroke="white"
+                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- LATEST OFFERS -->
+      <div class="offers">
+         <div class="container">
+            <div class="offers__inner">
+               <div class="offers__content">
+                  <h1 class="offers__content__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+                  <form class="offers__content__form">
+                     <div class="offers__content__form__email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                           <path
+                              d="M21 4.125H3C2.70163 4.125 2.41548 4.24353 2.2045 4.4545C1.99353 4.66548 1.875 4.95163 1.875 5.25V18C1.875 18.4973 2.07254 18.9742 2.42417 19.3258C2.77581 19.6775 3.25272 19.875 3.75 19.875H20.25C20.7473 19.875 21.2242 19.6775 21.5758 19.3258C21.9275 18.9742 22.125 18.4973 22.125 18V5.25C22.125 4.95163 22.0065 4.66548 21.7955 4.4545C21.5845 4.24353 21.2984 4.125 21 4.125ZM12 11.9738L5.89219 6.375H18.1078L12 11.9738ZM8.69906 12L4.125 16.1925V7.8075L8.69906 12ZM10.3641 13.5262L11.2397 14.3297C11.4472 14.52 11.7185 14.6255 12 14.6255C12.2815 14.6255 12.5528 14.52 12.7603 14.3297L13.6359 13.5262L18.1078 17.625H5.89219L10.3641 13.5262ZM15.3009 12L19.875 7.8075V16.1925L15.3009 12Z"
+                              fill="gray" fill-opacity="" />
+                           <script xmlns="" />
+                        </svg>
+                        <input class="offers__content__form__input" type="email" name="" id=""
+                           placeholder="Enter your email address">
+                     </div>
+                     <button class="offers__content__form__submit">Subscribe to Newsletter</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+         <div class="footer__top">
+            <!-- footer top body -->
+            <ul class="footer__top__outside__list">
+               <!-- logo || socials -->
+               <li class="footer__top__outside__item footer__social__mobile">
+                  <img class="footer__logo" src="/img/SHOP.CO.png" />
+                  <p class="footer__logo__title">
+                     We have clothes that suits your style and
+                     which you’re proud to wear. From women to men.
+                  </p>
+                  <ul class="footer__logo__social--networks">
+                     <li class="footer__logo__social__network">
+                        <a class="twitter__link__icon icon__svg">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                              version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+                              <path
+                                 d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"
+                                 style="fill-rule:nonzero;" />
+                              <script xmlns="" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__logo__social__network">
+                        <a class="face__link__icon icon__svg">
+                           <svg enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1"
+                              viewBox="0 0 56.693 56.693" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <path
+                                 d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__logo__social__network">
+                        <a class="insta__link__icon icon__svg">
+                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7"
+                              enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+                              <g>
+                                 <path
+                                    d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7   c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+                                 <circle cx="41.5" cy="16.4" r="2.9" />
+                                 <path
+                                    d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9   h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3   s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6   c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+                              </g>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__logo__social__network">
+                        <a class="github__link__icon icon__svg">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32"
+                              xml:space="preserve">
+                              <path clip-rule="evenodd"
+                                 d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z"
+                                 fill-rule="evenodd" />
+                              <script xmlns="" />
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <!-- compony -->
+               <li class="footer__top__outside__item">
+                  <ul class="footer__inside__list">
+                     <li class="footer__inside__item footer__inside__item--uppercase">
+                        Company
+                     </li>
+                     <li class="footer__inside__item">
+                        About
+                     </li>
+                     <li class="footer__inside__item">
+                        Featers
+                     </li>
+                     <li class="footer__inside__item">
+                        Works
+                     </li>
+                     <li class="footer__inside__item">
+                        Career
+                     </li>
+                  </ul>
+               </li>
+               <!-- help -->
+               <li class="footer__top__outside__item">
+                  <ul class="footer__inside__list">
+                     <li class="footer__inside__item footer__inside__item--uppercase">
+                        Help
+                     </li>
+                     <li class="footer__inside__item">
+                        Customer Support
+                     </li>
+                     <li class="footer__inside__item">
+                        Delivery Details
+                     </li>
+                     <li class="footer__inside__item">
+                        Terms & Conditions
+                     </li>
+                     <li class="footer__inside__item">
+                        Privacy Policy
+                     </li>
+                  </ul>
+               </li>
+               <!-- faq -->
+               <li class="footer__top__outside__item">
+                  <ul class="footer__inside__list">
+                     <li class="footer__inside__item footer__inside__item--uppercase">
+                        FAQ
+                     </li>
+                     <li class="footer__inside__item">
+                        Account
+                     </li>
+                     <li class="footer__inside__item">
+                        Manage Deliveries
+                     </li>
+                     <li class="footer__inside__item">
+                        Orders
+                     </li>
+                     <li class="footer__inside__item">
+                        Payments
+                     </li>
+                  </ul>
+               </li>
+               <!-- resourse -->
+               <li class="footer__top__outside__item">
+                  <ul class="footer__inside__list">
+                     <li class="footer__inside__item footer__inside__item--uppercase">
+                        Resources
+                     </li>
+                     <li class="footer__inside__item">
+                        Free eBooks
+                     </li>
+
+                     <li class="footer__inside__item">
+                        Development Tutorial
+                     </li>
+
+                     <li class="footer__inside__item">
+                        How to - Blog
+                     </li>
+
+                     <li class="footer__inside__item">
+                        Youtube Playlist
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__bottom">
+            <div class="footer__bottom__inner">
+               <ul class="footer__bottom__content__list">
+                  <li class="footer__bottom__content__item">
+                     Shop.co © 2000-2023, All Rights Reserved
+                  </li>
+                  <li class="footer__bottom__content__items">
+                     <img class="footer__bottom__content__item--card" src="/img/pay/Visa.png" />
+                     <img class="footer__bottom__content__item--card" src="/img/pay/Mastercard.png" />
+                     <img class="footer__bottom__content__item--card" src="/img/pay/Paypal.png" />
+                     <img class="footer__bottom__content__item--card" src="/img/pay/apple pay.png" />
+                     <img class="footer__bottom__content__item--card" src="/img/pay/G Pay.png" />
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="/js/mixitup.min.js"></script>
+<script src="/js/aboutCart.js"></script>
+<script src="/js/app.js"></script>
+
+</html>
