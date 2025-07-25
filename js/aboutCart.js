@@ -109,6 +109,10 @@ $(function () {
             settings: {
                slidesToShow: 1
             }
+         },
+         {
+            breakpoint: 99999, // >1450px
+            settings: "unslick" // <-- ВОТ ЗДЕСЬ
          }
       ]
 

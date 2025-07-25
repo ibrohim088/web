@@ -12,78 +12,86 @@
 
 <body>
    <div class="wrapper">
-      <div class="boxTitle">
-         <p class="boxItem">Sign up and get 20% off to your first order.</p>
-         <a href="/page/signUp.html">Sign Up Now</a>
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="white" xmlns="http://www.w3.org/2000/svg">
-            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-         </svg>
-      </div>
-      <!-- header -->
+      <!-- headerz -->
       <header class="main__header">
-         <nav class="header__nav">
-            <div class="header__nav__logo__img">
-               <div class="overlay"></div>
-               <a class="burger burger--follow" href="#">
-                  <span></span>
-               </a>
-               <img src="/img/SHOP.CO.png" alt="">
+         <div class="header__top__fixed">
+            <!-- header top -->
+            <div class="boxTitle">
+               <p class="boxItem">Sign up and get 20% off to your first order.</p>
+               <a href="../page/signUp.html">Sign Up Now</a>
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" stroke="white"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+               </svg>
             </div>
-            <ul class="header__nav__menu__list header__nav__menu__list--open">
-               <li class="header__nav__menu__item">
-                  <select class="header__nav__menu__item__select" name="shop" id="shop">
-                     <option value="shop">Shop</option>
-                     <option value="noshop">No Shop</option>
-                  </select>
-               </li>
-               <li class="header__nav__menu__item"><a href="#onSale">On Sale</a></li>
-               <li class="header__nav__menu__item"><a href="#arrivals">New Arrivals</a></li>
-               <li class="header__nav__menu__item"><a href="#brands">Brands</a></li>
-            </ul>
-            <div class="header__nav__form">
-               <form class="header__nav__form__search">
-                  <button type="submit" class="header__nav__search__button">
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="10" r="7" stroke="#00000066" stroke-width="2"></circle>
-                        <line x1="16.24" y1="16.24" x2="22" y2="22" stroke="#00000066" stroke-width="2"></line>
-                     </svg>
+            <!-- navbar -->
+            <nav class="header__nav">
+               <div class="header__nav__logo__img">
+                  <div class="overlay"></div>
+                  <button class="burger burger--follow">
+                     <span></span>
                   </button>
-                  <input type="text" placeholder="Search for product..." class="header__nav__search__input">
-               </form>
-            </div>
-            <div class="header__nav__icons">
-               <div class="header__nav__icons__item">
-                  <a href="#openModal" id="openModal">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-                        stroke="black" stroke-width="2">
-                        <circle cx="11" cy="11" r="8" />
-                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                     </svg>
+                  <a href="/index.html">
+                     <img class="logo" src="../img/SHOP.CO.png" alt="">
                   </a>
                </div>
-               <div class="header__nav__icons__item">
-                  <a href="/page/basket.html">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 24" fill="none"
-                        stroke="black" stroke-width="2">
-                        <circle cx="8" cy="20" r="1" />
-                        <circle cx="20" cy="20.4" r="1" />
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-                     </svg>
-                  </a>
+               <ul class="header__nav__menu__list ">
+                  <li class="header__nav__menu__item">
+                     <p class="header__nav__menu__item__select">
+                        Shop
+                        <img src="../img/cursor.svg" alt="">
+                     </p>
+                  </li>
+                  <li class="header__nav__menu__item"><a href="#onSale">On Sale</a></li>
+                  <li class="header__nav__menu__item"><a href="#arrivals">New Arrivals</a></li>
+                  <li class="header__nav__menu__item"><a href="#brands">Brands</a></li>
+               </ul>
+               <div class="header__nav__form">
+                  <form class="header__nav__form__search">
+                     <button type="submit" class="header__nav__search__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="10" cy="10" r="7" stroke="#00000066" stroke-width="2"></circle>
+                           <line x1="16.24" y1="16.24" x2="22" y2="22" stroke="#00000066" stroke-width="2"></line>
+                        </svg>
+                     </button>
+                     <input type="text" placeholder="Search for product..." class="header__nav__search__input">
+                  </form>
                </div>
-               <div class="header__nav__icons__item">
-                  <a href="/page/signIn.html">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-                        stroke="black" stroke-width="2">
-                        <circle cx="12" cy="12" r="10" />
-                        <circle cx="12" cy="10" r="3" />
-                        <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
-                     </svg>
-                  </a>
+               <div class="header__nav__icons">
+                  <div class="header__nav__icons__item">
+                     <a href="#openModal" id="openModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                           stroke="black" stroke-width="2">
+                           <circle cx="11" cy="11" r="8" />
+                           <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="header__nav__icons__item">
+                     <a href="../page/basket.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 24" fill="none"
+                           stroke="black" stroke-width="2">
+                           <circle cx="8" cy="20" r="1" />
+                           <circle cx="20" cy="20.4" r="1" />
+                           <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="header__nav__icons__item">
+                     <a href="../page/signIn.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                           stroke="black" stroke-width="2">
+                           <circle cx="12" cy="12" r="10" />
+                           <circle cx="12" cy="10" r="3" />
+                           <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                        </svg>
+                     </a>
+                  </div>
                </div>
-            </div>
-         </nav>
+            </nav>
+         </div>
+         <!-- header bottom and  header body -->
          <div class="header__body">
             <div class="header__svgs">
                <svg class="svg1" xmlns></svg>
@@ -112,21 +120,21 @@
                      </li>
                   </ul>
                </div>
-               <img class="header__bg__img" src="/img/decorheaderMobile.png" alt="" width="" height="700px">
+               <img class="header__bg__img" src="../img/decorheaderMobile.png" alt="" width="" height="700px">
             </div>
          </div>
          <div class="header__brand">
             <ul class="header__brand__list">
-               <li style="width: 180px; height: 40px;" class="header__brand__list__item"><img src="/img/versachi.png"
+               <li style="width: 180px; height: 40px;" class="header__brand__list__item"><img src="../img/versachi.png"
                      alt=""></li>
-               <li style="width: 100px; height: 40px;" class="header__brand__list__item"><img src="/img/zara.png"
+               <li style="width: 100px; height: 40px;" class="header__brand__list__item"><img src="../img/zara.png"
                      alt=""></li>
-               <li style="width: 170px; height: 40px;" class="header__brand__list__item"><img src="/img/gucci.png"
+               <li style="width: 170px; height: 40px;" class="header__brand__list__item"><img src="../img/gucci.png"
                      alt=""></li>
-               <li style="width: 210px; height: 40px;" class="header__brand__list__item"><img src="/img/prada.png"
+               <li style="width: 210px; height: 40px;" class="header__brand__list__item"><img src="../img/prada.png"
                      alt=""></li>
-               <li style="width: 220px; height: 40px;" class="header__brand__list__item"><img src="/img/calvinklay.png"
-                     alt=""></li>
+               <li style="width: 220px; height: 40px;" class="header__brand__list__item"><img
+                     src="../img/calvinklay.png" alt=""></li>
             </ul>
          </div>
       </header>
@@ -140,12 +148,12 @@
                <!-- cart 1 -->
                <div class="arrivalies__inner arrivalies__slider">
                   <!-- cart 1 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/1.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/1.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">T-shirt With Tape Details</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/4.5.png" alt="">
+                           <img class="" src="../img/star/4.5.png" alt="">
                            <p>4.5/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -154,12 +162,12 @@
                      </div>
                   </a>
                   <!-- cart 2 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/2.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/2.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">SKINNY FIT JEANS</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/3.5.png" alt="">
+                           <img class="" src="../img/star/3.5.png" alt="">
                            <p>3.5/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -170,12 +178,12 @@
                      </div>
                   </a>
                   <!-- cart 3 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/3.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/3.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">CHECKERED SHIRT</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/4.5.png" alt="">
+                           <img class="" src="../img/star/4.5.png" alt="">
                            <p>4.5/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -184,12 +192,12 @@
                      </div>
                   </a>
                   <!-- cart 4 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/4.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/4.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">SLEEVE STRIPED T-SHIRT</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/4.5.png" alt="">
+                           <img class="" src="../img/star/4.5.png" alt="">
                            <p>4.5/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -209,12 +217,12 @@
                <!-- cart 2 -->
                <div class="arrivalies__inner selling__slider">
                   <!-- cart 5 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/5.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/5.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">VERTICAL STRIPED SHIRT</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/5.png" alt="">
+                           <img class="" src="../img/star/5.png" alt="">
                            <p>5.0/5</p>
                         </div>
 
@@ -226,12 +234,12 @@
                      </div>
                   </a>
                   <!-- cart 6 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/6.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/6.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">COURAGE GRAPHIC T-SHIRT</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/4.png" alt="">
+                           <img class="" src="../img/star/4.png" alt="">
                            <p>4.0/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -240,12 +248,12 @@
                      </div>
                   </a>
                   <!-- cart 7-->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/7.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/7.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">LOOSE FIT BERMUDA SHORTS</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/3.png" alt="">
+                           <img class="" src="../img/star/3.png" alt="">
                            <p>3.0/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -254,12 +262,12 @@
                      </div>
                   </a>
                   <!-- cart 8 -->
-                  <a href="/page/aboutCart.html" class="arrivalies__heanding__cart">
-                     <img class="arrivalies__img" src="/img/arrivalsIMG/8.png" alt="">
+                  <a href="../page/aboutCart.html" class="arrivalies__heanding__cart">
+                     <img class="arrivalies__img" src="../img/arrivalsIMG/8.png" alt="">
                      <div class="arrivalies__heanding__cart__description">
                         <h2 class="arrivalies__heanding__cart__title">FADED SKINNY JEANS</h2>
                         <div class="arrivalies__heanding__cart__star">
-                           <img class="" src="/img/star/4.5.png" alt="">
+                           <img class="" src="../img/star/4.5.png" alt="">
                            <p>4.5/5</p>
                         </div>
                         <ul class="arrivalies__heanding__cart__prices__list">
@@ -280,22 +288,30 @@
                      <div class="dress__content">
                         <div class="dress__content__list">
                            <!-- cart img 1 -->
-                           <a href="/page/Casual.html" class="dress__content__item content__item--hover">
+                           <a href="../page/Casual.html" class="dress__content__item content__item--hover">
                               <p class="dress__content__item__title">Casual</p>
+                              <img class="dress__content__item__img" src="./img/deess/1.png" alt="">
+                              <img class="img-mobile1" src="./img/deess/1.2.png" alt="">
                            </a>
                            <!-- cart img 2 -->
-                           <a href="/page/Casual.html" class="dress__content__item2 content__item--hover">
+                           <a href="../page/Casual.html" class="dress__content__item2 content__item--hover">
                               <p class="dress__content__item__title">Formal</p>
+                              <img class="dress__content__item__img2" src="./img/deess/2.png" alt="">
+                              <img class="img-mobile2" src="./img/deess/2.3.png" alt="">
                            </a>
                         </div>
                         <div style="padding-bottom: 30px;" class="dress__content__list">
                            <!-- cart img 3 -->
-                           <a href="/page/Casual.html" class="dress__content__item3 content__item--hover">
+                           <a href="../page/Casual.html" class="dress__content__item3 content__item--hover">
                               <p class="dress__content__item__title">Party</p>
+                              <img class="dress__content__item__img3" src="./img/deess/3.png" alt="">
+                              <img class="img-mobile3" src="./img/deess/3.4.png" alt="">
                            </a>
                            <!-- cart img 4 -->
-                           <a href="/page/Casual.html" class="dress__content__item4 content__item--hover">
+                           <a href="../page/Casual.html" class="dress__content__item4 content__item--hover">
                               <p class="dress__content__item__title">gym</p>
+                              <img class="dress__content__item__img4" src="./img/deess/4.png" alt="">
+                              <img class="img-mobile4" src="./img/deess/4.2.png" alt="">
                            </a>
                         </div>
                      </div>
@@ -333,10 +349,10 @@
                      <div class="custommers__slider__list">
                         <!-- cart 1 -->
                         <div class="custommers__slide__item">
-                           <img src="/img/star/5.png" alt="">
+                           <img src="../img/star/5.png" alt="">
                            <h1 class="custommers__slide__title">
                               Sarah M.
-                              <img src="/img/checkbox.svg" alt="">
+                              <img src="../img/checkbox.svg" alt="">
                            </h1>
                            <p class="custommers__content__description">
                               "I'm blown away by the quality and style of the
@@ -348,10 +364,10 @@
 
                         <!-- cart 2 -->
                         <div class="custommers__slide__item">
-                           <img src="/img/star/5.png" alt="">
+                           <img src="../img/star/5.png" alt="">
                            <h1 class="custommers__slide__title">
                               Alex K.
-                              <img src="/img/checkbox.svg" alt="">
+                              <img src="../img/checkbox.svg" alt="">
                            </h1>
                            <p class="custommers__content__description">
                               "Finding clothes that align with my personal style used to be a challenge until I
@@ -362,10 +378,10 @@
 
                         <!-- cart 3 -->
                         <div class="custommers__slide__item">
-                           <img src="/img/star/5.png" alt="">
+                           <img src="../img/star/5.png" alt="">
                            <h1 class="custommers__slide__title">
                               James L.
-                              <img src="/img/checkbox.svg" alt="">
+                              <img src="../img/checkbox.svg" alt="">
                            </h1>
                            <p class="custommers__content__description">
                               "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
@@ -376,10 +392,10 @@
 
                         <!-- cart 4 -->
                         <div class="custommers__slide__item">
-                           <img src="/img/star/5.png" alt="">
+                           <img src="../img/star/5.png" alt="">
                            <h1 class="custommers__slide__title">
                               Mooen
-                              <img src="/img/checkbox.svg" alt="">
+                              <img src="../img/checkbox.svg" alt="">
                            </h1>
                            <p class="custommers__content__description">
                               "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
@@ -423,7 +439,7 @@
             <ul class="footer__top__outside__list">
                <!-- logo || socials -->
                <li class="footer__top__outside__item footer__social__mobile">
-                  <img class="footer__logo" src="/img/SHOP.CO.png" />
+                  <img class="footer__logo" src="../img/SHOP.CO.png" />
                   <p class="footer__logo__title">
                      We have clothes that suits your style and
                      which you’re proud to wear. From women to men.
@@ -573,11 +589,11 @@
                      Shop.co © 2000-2023, All Rights Reserved
                   </li>
                   <li class="footer__bottom__content__items">
-                     <img class="footer__bottom__content__item--card" src="/img/pay/Visa.png" />
-                     <img class="footer__bottom__content__item--card" src="/img/pay/Mastercard.png" />
-                     <img class="footer__bottom__content__item--card" src="/img/pay/Paypal.png" />
-                     <img class="footer__bottom__content__item--card" src="/img/pay/apple pay.png" />
-                     <img class="footer__bottom__content__item--card" src="/img/pay/G Pay.png" />
+                     <img class="footer__bottom__content__item--card" src="../img/pay/Visa.png" />
+                     <img class="footer__bottom__content__item--card" src="../img/pay/Mastercard.png" />
+                     <img class="footer__bottom__content__item--card" src="../img/pay/Paypal.png" />
+                     <img class="footer__bottom__content__item--card" src="../img/pay/apple pay.png" />
+                     <img class="footer__bottom__content__item--card" src="../img/pay/G Pay.png" />
                   </li>
                </ul>
             </div>
